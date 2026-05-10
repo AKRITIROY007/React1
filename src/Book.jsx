@@ -1,17 +1,12 @@
 import React from "react";
 
-const Title = () => <h1>LETS LEARN REACT</h1>;
-const Author = () => <h1>Hi this is Author</h1>;
-const Price = () => <h1>Rs. 450</h1>;
-const Image = () => <h1>Image holder</h1>;
-
-const Book = () => {
+const Book = (props) => {
+  console.log(props);
   return (
     <>
-      <Title />
-      <Author />
-      <Price />
-      <Image />
+      <h1>{props.writer}</h1>
+      <h2>{props.price}</h2>
+      <h1>{props.BookName}</h1>
     </>
   );
 };
