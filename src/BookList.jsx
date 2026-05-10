@@ -2,22 +2,39 @@ import React from "react";
 import Book from "./Book";
 
 const BookList = () => {
-  const book1 = {
-    author: "yash",
-    title: "c",
-    price: "250",
-  };
+  const books = [
+    {
+      author: "yash",
+      title: "c",
+      price: "250",
+    },
 
-  const book2 = {
-    author: "Akriti",
-    title: "React",
-    price: "300",
-  };
+    {
+      author: "Akriti",
+      title: "React",
+      price: "300",
+    },
+
+    {
+      author: "Mrs. Sakshi",
+      title: "MATHS",
+      price: "890",
+    },
+
+    {
+      author: "Mrs Rakhi",
+      title: "Java",
+      price: "789",
+    },
+  ];
 
   return (
     <>
-      <Book {...book1} />
-      <Book {...book2} />
+      {
+        books.map((item) => (
+        <Book {...item} />
+        ))
+      }
     </>
   );
 };
