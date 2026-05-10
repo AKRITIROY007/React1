@@ -1,24 +1,17 @@
-import { Footer } from "./Footer";
+import Footer from "./Footer";
 import Homeee from "./Homeee";
-
-const Hello = () => {
-  return <h2>THIS IS FIRST react COMPONENT</h2>;
-};
-
-const Bye = () => {
-  
-};
+import { Hello, FunctionInFooter } from "./Footer";
+import { Bye } from "./Homeee";
+import { Body } from "./Body";
 
 const App = () => {
   return (
-    <div>
+    <>
       <Homeee />
-      
-      <Bye />
-      <Hello />
-      <Hello />
-      <Footer/>
-    </div>
+      <Body />
+      <Footer />
+      <FunctionInFooter />
+    </>
   );
 };
 
