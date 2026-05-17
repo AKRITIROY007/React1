@@ -2,7 +2,7 @@ import React from "react";
 import Movie from "./Movie";
 
 const MOVIELIST = () => {
-  const Movie = [
+  const movies = [
     {
       title: "Interstellar",
       director: "Christopher Nolan",
