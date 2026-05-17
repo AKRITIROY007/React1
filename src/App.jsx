@@ -4,6 +4,7 @@ import { Hello, FunctionInFooter } from "./Footer";
 import { Bye } from "./Homeee";
 import { Body } from "./Body";
 import BookList from "./BookList";
+import MOVIELIST from "./MOVIELIST";
 
 const App = () => {
   return (
@@ -12,7 +13,7 @@ const App = () => {
       <Body />
       <Footer />
       <FunctionInFooter /> */}
-      <BookList />
+      <MOVIELIST />
     </>
   );
 };
